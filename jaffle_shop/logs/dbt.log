@@ -1,0 +1,524 @@
+[0m12:25:59.010856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD50885750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD52B569D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD5292CDD0>]}
+
+
+============================== 12:25:59.018863 | 815e3d3f-85ae-46c4-bc44-cd56eb7a1b0c ==============================
+[0m12:25:59.018863 [info ] [MainThread]: Running with dbt=1.5.0
+[0m12:25:59.020858 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\RWillock\\.dbt', 'log_path': 'C:\\Git\\dbt-tutorial\\jaffle_shop\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:25:59.023850 [info ] [MainThread]: dbt version: 1.5.0
+[0m12:25:59.024848 [info ] [MainThread]: python version: 3.11.3
+[0m12:25:59.026841 [info ] [MainThread]: python path: C:\Users\RWillock\AppData\Local\Programs\Python\Python311\python.exe
+[0m12:25:59.027839 [info ] [MainThread]: os info: Windows-10-10.0.19044-SP0
+[0m12:25:59.029834 [info ] [MainThread]: Using profiles.yml file at C:\Users\RWillock\.dbt\profiles.yml
+[0m12:25:59.032828 [info ] [MainThread]: Using dbt_project.yml file at C:\Git\dbt-tutorial\jaffle_shop\dbt_project.yml
+[0m12:25:59.033824 [info ] [MainThread]: Configuration:
+[0m12:26:01.915538 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:26:01.957842 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:26:01.958679 [info ] [MainThread]: Required dependencies:
+[0m12:26:01.959680 [debug] [MainThread]: Executing "git --help"
+[0m12:26:02.125283 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:26:02.126308 [debug] [MainThread]: STDERR: "b''"
+[0m12:26:02.127309 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:26:02.128275 [info ] [MainThread]: Connection:
+[0m12:26:02.129272 [info ] [MainThread]:   host: adb-8911032177139987.7.azuredatabricks.net
+[0m12:26:02.130270 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/4951d4d476e6bfe3
+[0m12:26:02.132266 [info ] [MainThread]:   schema: test_rw
+[0m12:26:02.133262 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:26:02.135257 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:26:02.139249 [debug] [MainThread]: On debug: select 1 as id
+[0m12:26:02.140247 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:26:02.836704 [debug] [MainThread]: SQL status: OK in 0.699999988079071 seconds
+[0m12:26:02.838700 [debug] [MainThread]: On debug: Close
+[0m12:26:03.022548 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:26:03.023574 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:26:03.025572 [debug] [MainThread]: Command `dbt debug` succeeded at 12:26:03.025572 after 4.12 seconds
+[0m12:26:03.025572 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:26:03.026570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD52F14150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD4E04F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FD4E04F510>]}
+[0m12:26:03.027569 [debug] [MainThread]: Flushing usage events
+[0m13:07:17.811882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D723EE790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D723EF810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D723036D0>]}
+
+
+============================== 13:07:17.816895 | 88bc0659-2b44-4f87-b174-0c88b036ce32 ==============================
+[0m13:07:17.816895 [info ] [MainThread]: Running with dbt=1.5.0
+[0m13:07:17.817568 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\RWillock\\.dbt', 'log_path': 'C:\\Git\\dbt-tutorial\\jaffle_shop\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:07:19.726029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D72303890>]}
+[0m13:07:19.749976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D03B8C510>]}
+[0m13:07:19.780848 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m13:07:19.783840 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:07:19.785835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D03B66150>]}
+[0m13:07:21.283116 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m13:07:21.302104 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m13:07:21.477786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D719B13D0>]}
+[0m13:07:21.495736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D03DC2E90>]}
+[0m13:07:21.496734 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 409 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m13:07:21.497730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D03DC3FD0>]}
+[0m13:07:21.499725 [info ] [MainThread]: 
+[0m13:07:21.501755 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:07:21.505710 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m13:07:21.523663 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m13:07:21.527656 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m13:07:21.528664 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:07:22.890416 [debug] [ThreadPool]: SQL status: OK in 1.3600000143051147 seconds
+[0m13:07:22.920855 [debug] [ThreadPool]: On list_schemas: Close
+[0m13:07:23.092567 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_test_rw'
+[0m13:07:23.103538 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:07:23.104536 [debug] [ThreadPool]: Using databricks connection "list_None_test_rw"
+[0m13:07:23.105533 [debug] [ThreadPool]: On list_None_test_rw: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_None_test_rw"} */
+show tables in `test_rw`
+  
+[0m13:07:23.105533 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:07:23.849435 [debug] [ThreadPool]: SQL status: OK in 0.7400000095367432 seconds
+[0m13:07:23.861201 [debug] [ThreadPool]: Using databricks connection "list_None_test_rw"
+[0m13:07:23.863163 [debug] [ThreadPool]: On list_None_test_rw: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_None_test_rw"} */
+show views in `test_rw`
+  
+[0m13:07:24.272482 [debug] [ThreadPool]: SQL status: OK in 0.4099999964237213 seconds
+[0m13:07:24.276540 [debug] [ThreadPool]: On list_None_test_rw: ROLLBACK
+[0m13:07:24.277540 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:07:24.277540 [debug] [ThreadPool]: On list_None_test_rw: Close
+[0m13:07:24.436921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D70307250>]}
+[0m13:07:24.436921 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:07:24.437928 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:07:24.438917 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:07:24.439916 [info ] [MainThread]: 
+[0m13:07:24.504791 [debug] [Thread-1 (]: Began running node model.jaffle_shop.my_first_dbt_model
+[0m13:07:24.506789 [info ] [Thread-1 (]: 1 of 2 START sql table model test_rw.my_first_dbt_model ........................ [RUN]
+[0m13:07:24.511774 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jaffle_shop.my_first_dbt_model'
+[0m13:07:24.515773 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.my_first_dbt_model
+[0m13:07:24.522743 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+[0m13:07:24.539700 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_first_dbt_model (compile): 13:07:24.517760 => 13:07:24.538702
+[0m13:07:24.543721 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.my_first_dbt_model
+[0m13:07:24.680322 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.my_first_dbt_model"
+[0m13:07:24.686305 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:07:24.687303 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_first_dbt_model"
+[0m13:07:24.688301 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+  
+    
+        create or replace table `test_rw`.`my_first_dbt_model`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m13:07:24.690294 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:07:47.295621 [debug] [Thread-1 (]: SQL status: OK in 22.610000610351562 seconds
+[0m13:07:47.531631 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_first_dbt_model (execute): 13:07:24.546679 => 13:07:47.531631
+[0m13:07:47.532628 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: ROLLBACK
+[0m13:07:47.532628 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:07:47.533587 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: Close
+[0m13:07:47.690499 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D03D28090>]}
+[0m13:07:47.691495 [info ] [Thread-1 (]: 1 of 2 OK created sql table model test_rw.my_first_dbt_model ................... [[32mOK[0m in 23.18s]
+[0m13:07:47.693513 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.my_first_dbt_model
+[0m13:07:47.694510 [debug] [Thread-1 (]: Began running node model.jaffle_shop.my_second_dbt_model
+[0m13:07:47.695507 [info ] [Thread-1 (]: 2 of 2 START sql view model test_rw.my_second_dbt_model ........................ [RUN]
+[0m13:07:47.699502 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.my_first_dbt_model, now model.jaffle_shop.my_second_dbt_model)
+[0m13:07:47.700495 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.my_second_dbt_model
+[0m13:07:47.704484 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+[0m13:07:47.707476 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_second_dbt_model (compile): 13:07:47.701492 => 13:07:47.706478
+[0m13:07:47.708760 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.my_second_dbt_model
+[0m13:07:47.732409 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.my_second_dbt_model"
+[0m13:07:47.735403 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:07:47.736397 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_second_dbt_model"
+[0m13:07:47.737399 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+create or replace view `test_rw`.`my_second_dbt_model`
+  
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from `test_rw`.`my_first_dbt_model`
+where id = 1
+
+[0m13:07:47.738394 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:07:49.061214 [debug] [Thread-1 (]: SQL status: OK in 1.3200000524520874 seconds
+[0m13:07:49.066202 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_second_dbt_model (execute): 13:07:47.710469 => 13:07:49.065204
+[0m13:07:49.067197 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: ROLLBACK
+[0m13:07:49.068195 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:07:49.069192 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: Close
+[0m13:07:49.242578 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88bc0659-2b44-4f87-b174-0c88b036ce32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D03B8E8D0>]}
+[0m13:07:49.244569 [info ] [Thread-1 (]: 2 of 2 OK created sql view model test_rw.my_second_dbt_model ................... [[32mOK[0m in 1.54s]
+[0m13:07:49.245569 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.my_second_dbt_model
+[0m13:07:49.248561 [debug] [MainThread]: On master: ROLLBACK
+[0m13:07:49.250555 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:07:49.461298 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:07:49.462326 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:07:49.462326 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:07:49.463344 [debug] [MainThread]: On master: ROLLBACK
+[0m13:07:49.463344 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:07:49.464336 [debug] [MainThread]: On master: Close
+[0m13:07:49.626011 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:07:49.626011 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m13:07:49.627009 [debug] [MainThread]: Connection 'list_None_test_rw' was properly closed.
+[0m13:07:49.627009 [debug] [MainThread]: Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+[0m13:07:49.629003 [info ] [MainThread]: 
+[0m13:07:49.629562 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 28.13 seconds (28.13s).
+[0m13:07:49.631560 [debug] [MainThread]: Command end result
+[0m13:07:49.651511 [info ] [MainThread]: 
+[0m13:07:49.652504 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:07:49.654497 [info ] [MainThread]: 
+[0m13:07:49.655497 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m13:07:49.656492 [debug] [MainThread]: Command `dbt run` succeeded at 13:07:49.656492 after 31.91 seconds
+[0m13:07:49.657489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D723036D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D723C4150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D6D5FF510>]}
+[0m13:07:49.660487 [debug] [MainThread]: Flushing usage events
+[0m13:18:34.920548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D51A9090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D592FC10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D526A550>]}
+
+
+============================== 13:18:34.926568 | 917aa5a6-0225-49e0-8071-21290c854060 ==============================
+[0m13:18:34.926568 [info ] [MainThread]: Running with dbt=1.5.0
+[0m13:18:34.928531 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Git\\dbt-tutorial\\jaffle_shop\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\RWillock\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:37.474770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D51A8E90>]}
+[0m13:18:37.501670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278E6C06E90>]}
+[0m13:18:37.532587 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m13:18:37.745051 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:18:37.747015 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models\example\my_first_dbt_model.sql
+[0m13:18:37.791895 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m13:18:37.930526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278E6C5F250>]}
+[0m13:18:37.953467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278E6D09390>]}
+[0m13:18:37.954465 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 409 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m13:18:37.956698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278E6D094D0>]}
+[0m13:18:37.960205 [info ] [MainThread]: 
+[0m13:18:37.964194 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:18:37.970176 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m13:18:38.010076 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m13:18:38.011068 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m13:18:38.013063 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:18:38.848837 [debug] [ThreadPool]: SQL status: OK in 0.8399999737739563 seconds
+[0m13:18:38.858810 [debug] [ThreadPool]: On list_schemas: Close
+[0m13:18:39.027396 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_test_rw'
+[0m13:18:39.041324 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:39.042324 [debug] [ThreadPool]: Using databricks connection "list_None_test_rw"
+[0m13:18:39.043320 [debug] [ThreadPool]: On list_None_test_rw: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_None_test_rw"} */
+show tables in `test_rw`
+  
+[0m13:18:39.044345 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:18:39.637553 [debug] [ThreadPool]: SQL status: OK in 0.5899999737739563 seconds
+[0m13:18:39.653508 [debug] [ThreadPool]: Using databricks connection "list_None_test_rw"
+[0m13:18:39.654506 [debug] [ThreadPool]: On list_None_test_rw: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_None_test_rw"} */
+show views in `test_rw`
+  
+[0m13:18:40.055437 [debug] [ThreadPool]: SQL status: OK in 0.4000000059604645 seconds
+[0m13:18:40.060424 [debug] [ThreadPool]: On list_None_test_rw: ROLLBACK
+[0m13:18:40.061421 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:18:40.061421 [debug] [ThreadPool]: On list_None_test_rw: Close
+[0m13:18:40.227977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D4AA3810>]}
+[0m13:18:40.228975 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:40.229972 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:18:40.231967 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:18:40.233962 [info ] [MainThread]: 
+[0m13:18:40.240946 [debug] [Thread-1 (]: Began running node model.jaffle_shop.my_first_dbt_model
+[0m13:18:40.242939 [info ] [Thread-1 (]: 1 of 2 START sql table model test_rw.my_first_dbt_model ........................ [RUN]
+[0m13:18:40.244934 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jaffle_shop.my_first_dbt_model'
+[0m13:18:40.245930 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.my_first_dbt_model
+[0m13:18:40.250917 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+[0m13:18:40.254906 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_first_dbt_model (compile): 13:18:40.246928 => 13:18:40.253908
+[0m13:18:40.256901 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.my_first_dbt_model
+[0m13:18:40.296794 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:40.297791 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_first_dbt_model"
+[0m13:18:40.303790 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+      describe extended `test_rw`.`my_first_dbt_model`
+  
+[0m13:18:40.305775 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:18:40.975984 [debug] [Thread-1 (]: SQL status: OK in 0.6700000166893005 seconds
+[0m13:18:41.055772 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.my_first_dbt_model"
+[0m13:18:41.057768 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_first_dbt_model"
+[0m13:18:41.059761 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+  
+    
+        create or replace table `test_rw`.`my_first_dbt_model`
+      
+      
+    using delta
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+
+
+
+*/
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m13:18:47.233796 [debug] [Thread-1 (]: SQL status: OK in 6.170000076293945 seconds
+[0m13:18:47.508064 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_first_dbt_model (execute): 13:18:40.257898 => 13:18:47.508064
+[0m13:18:47.509061 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: ROLLBACK
+[0m13:18:47.511056 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:18:47.512053 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: Close
+[0m13:18:47.676615 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278E6D21750>]}
+[0m13:18:47.678610 [info ] [Thread-1 (]: 1 of 2 OK created sql table model test_rw.my_first_dbt_model ................... [[32mOK[0m in 7.43s]
+[0m13:18:47.681602 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.my_first_dbt_model
+[0m13:18:47.684594 [debug] [Thread-1 (]: Began running node model.jaffle_shop.my_second_dbt_model
+[0m13:18:47.688595 [info ] [Thread-1 (]: 2 of 2 START sql view model test_rw.my_second_dbt_model ........................ [RUN]
+[0m13:18:47.692572 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.my_first_dbt_model, now model.jaffle_shop.my_second_dbt_model)
+[0m13:18:47.693570 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.my_second_dbt_model
+[0m13:18:47.700232 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+[0m13:18:47.708545 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_second_dbt_model (compile): 13:18:47.694568 => 13:18:47.706549
+[0m13:18:47.711523 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.my_second_dbt_model
+[0m13:18:47.765378 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.my_second_dbt_model"
+[0m13:18:47.774356 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:47.775352 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_second_dbt_model"
+[0m13:18:47.776349 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+create or replace view `test_rw`.`my_second_dbt_model`
+  
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from `test_rw`.`my_first_dbt_model`
+where id = 1
+
+[0m13:18:47.778344 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:49.553383 [debug] [Thread-1 (]: SQL status: OK in 1.7799999713897705 seconds
+[0m13:18:49.557370 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_second_dbt_model (execute): 13:18:47.712523 => 13:18:49.557370
+[0m13:18:49.558367 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: ROLLBACK
+[0m13:18:49.559365 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:18:49.560362 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: Close
+[0m13:18:49.725973 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '917aa5a6-0225-49e0-8071-21290c854060', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278E6C70F10>]}
+[0m13:18:49.727970 [info ] [Thread-1 (]: 2 of 2 OK created sql view model test_rw.my_second_dbt_model ................... [[32mOK[0m in 2.04s]
+[0m13:18:49.730964 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.my_second_dbt_model
+[0m13:18:49.733953 [debug] [MainThread]: On master: ROLLBACK
+[0m13:18:49.734950 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:18:49.979301 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:18:49.980295 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:18:49.981292 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:18:49.982290 [debug] [MainThread]: On master: ROLLBACK
+[0m13:18:49.984288 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:18:49.985282 [debug] [MainThread]: On master: Close
+[0m13:18:50.149844 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:18:50.151865 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m13:18:50.152864 [debug] [MainThread]: Connection 'list_None_test_rw' was properly closed.
+[0m13:18:50.153862 [debug] [MainThread]: Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+[0m13:18:50.155830 [info ] [MainThread]: 
+[0m13:18:50.156825 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 12.19 seconds (12.19s).
+[0m13:18:50.159820 [debug] [MainThread]: Command end result
+[0m13:18:50.184760 [info ] [MainThread]: 
+[0m13:18:50.187756 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:18:50.191734 [info ] [MainThread]: 
+[0m13:18:50.192730 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m13:18:50.195722 [debug] [MainThread]: Command `dbt run` succeeded at 13:18:50.194725 after 15.36 seconds
+[0m13:18:50.196719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D5772B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D06BF550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000278D06BF510>]}
+[0m13:18:50.196719 [debug] [MainThread]: Flushing usage events
+[0m13:21:09.569395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7DD541A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7DD7E9FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7DD541410>]}
+
+
+============================== 13:21:09.578371 | 4600f754-f809-49d2-b851-4e1c30e3d7f2 ==============================
+[0m13:21:09.578371 [info ] [MainThread]: Running with dbt=1.5.0
+[0m13:21:09.580366 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\RWillock\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Git\\dbt-tutorial\\jaffle_shop\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:21:12.631243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7DDC86B10>]}
+[0m13:21:12.693081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EEF8CD90>]}
+[0m13:21:12.793811 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m13:21:13.235632 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m13:21:13.238625 [debug] [MainThread]: Partial parsing: updated file: jaffle_shop://models\example\my_first_dbt_model.sql
+[0m13:21:13.314423 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m13:21:13.498933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EF17EE50>]}
+[0m13:21:13.534835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EF060650>]}
+[0m13:21:13.536847 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 409 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m13:21:13.542813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EF063610>]}
+[0m13:21:13.549795 [info ] [MainThread]: 
+[0m13:21:13.562764 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m13:21:13.577735 [debug] [ThreadPool]: Acquiring new databricks connection 'list_schemas'
+[0m13:21:13.633572 [debug] [ThreadPool]: Using databricks connection "list_schemas"
+[0m13:21:13.636564 [debug] [ThreadPool]: On list_schemas: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_schemas"} */
+
+    show databases
+  
+[0m13:21:13.638559 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:14.583162 [debug] [ThreadPool]: SQL status: OK in 0.9399999976158142 seconds
+[0m13:21:14.595128 [debug] [ThreadPool]: On list_schemas: Close
+[0m13:21:14.771687 [debug] [ThreadPool]: Acquiring new databricks connection 'list_None_test_rw'
+[0m13:21:14.791605 [debug] [ThreadPool]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:14.792632 [debug] [ThreadPool]: Using databricks connection "list_None_test_rw"
+[0m13:21:14.793599 [debug] [ThreadPool]: On list_None_test_rw: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_None_test_rw"} */
+show tables in `test_rw`
+  
+[0m13:21:14.794596 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:21:15.425398 [debug] [ThreadPool]: SQL status: OK in 0.6299999952316284 seconds
+[0m13:21:15.442354 [debug] [ThreadPool]: Using databricks connection "list_None_test_rw"
+[0m13:21:15.443351 [debug] [ThreadPool]: On list_None_test_rw: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_None_test_rw"} */
+show views in `test_rw`
+  
+[0m13:21:15.837222 [debug] [ThreadPool]: SQL status: OK in 0.38999998569488525 seconds
+[0m13:21:15.842236 [debug] [ThreadPool]: On list_None_test_rw: ROLLBACK
+[0m13:21:15.843233 [debug] [ThreadPool]: Databricks adapter: NotImplemented: rollback
+[0m13:21:15.844231 [debug] [ThreadPool]: On list_None_test_rw: Close
+[0m13:21:16.022727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EF0B9210>]}
+[0m13:21:16.023723 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:16.023723 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:21:16.025717 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:21:16.026715 [info ] [MainThread]: 
+[0m13:21:16.034694 [debug] [Thread-1 (]: Began running node model.jaffle_shop.my_first_dbt_model
+[0m13:21:16.036691 [info ] [Thread-1 (]: 1 of 2 START sql view model test_rw.my_first_dbt_model ......................... [RUN]
+[0m13:21:16.043681 [debug] [Thread-1 (]: Acquiring new databricks connection 'model.jaffle_shop.my_first_dbt_model'
+[0m13:21:16.045666 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.my_first_dbt_model
+[0m13:21:16.048657 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+[0m13:21:16.052646 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_first_dbt_model (compile): 13:21:16.046663 => 13:21:16.051650
+[0m13:21:16.055641 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.my_first_dbt_model
+[0m13:21:16.094547 [debug] [Thread-1 (]: Dropping relation `test_rw`.`my_first_dbt_model` because it is of type table
+[0m13:21:16.110497 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_first_dbt_model"
+[0m13:21:16.113490 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+drop table if exists `test_rw`.`my_first_dbt_model`
+[0m13:21:16.115480 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:21:17.383791 [debug] [Thread-1 (]: SQL status: OK in 1.2699999809265137 seconds
+[0m13:21:17.411716 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.my_first_dbt_model"
+[0m13:21:17.413714 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:17.414709 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_first_dbt_model"
+[0m13:21:17.415707 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+create or replace view `test_rw`.`my_first_dbt_model`
+  
+  
+  as
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+
+
+*/
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+
+[0m13:21:18.160283 [debug] [Thread-1 (]: SQL status: OK in 0.7400000095367432 seconds
+[0m13:21:18.175242 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_first_dbt_model (execute): 13:21:16.056638 => 13:21:18.175242
+[0m13:21:18.176240 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: ROLLBACK
+[0m13:21:18.177237 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:21:18.177237 [debug] [Thread-1 (]: On model.jaffle_shop.my_first_dbt_model: Close
+[0m13:21:18.338063 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EEFC5890>]}
+[0m13:21:18.339063 [info ] [Thread-1 (]: 1 of 2 OK created sql view model test_rw.my_first_dbt_model .................... [[32mOK[0m in 2.30s]
+[0m13:21:18.341056 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.my_first_dbt_model
+[0m13:21:18.342053 [debug] [Thread-1 (]: Began running node model.jaffle_shop.my_second_dbt_model
+[0m13:21:18.343052 [info ] [Thread-1 (]: 2 of 2 START sql view model test_rw.my_second_dbt_model ........................ [RUN]
+[0m13:21:18.345046 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.jaffle_shop.my_first_dbt_model, now model.jaffle_shop.my_second_dbt_model)
+[0m13:21:18.346043 [debug] [Thread-1 (]: Began compiling node model.jaffle_shop.my_second_dbt_model
+[0m13:21:18.351029 [debug] [Thread-1 (]: Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+[0m13:21:18.359038 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_second_dbt_model (compile): 13:21:18.346043 => 13:21:18.358012
+[0m13:21:18.360033 [debug] [Thread-1 (]: Began executing node model.jaffle_shop.my_second_dbt_model
+[0m13:21:18.369018 [debug] [Thread-1 (]: Writing runtime sql for node "model.jaffle_shop.my_second_dbt_model"
+[0m13:21:18.375963 [debug] [Thread-1 (]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:18.377958 [debug] [Thread-1 (]: Using databricks connection "model.jaffle_shop.my_second_dbt_model"
+[0m13:21:18.379952 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.5.0", "dbt_databricks_version": "1.5.2", "databricks_sql_connector_version": "2.5.2", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+create or replace view `test_rw`.`my_second_dbt_model`
+  
+  
+  as
+    -- Use the `ref` function to select from other models
+
+select *
+from `test_rw`.`my_first_dbt_model`
+where id = 1
+
+[0m13:21:18.380953 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:21:20.100369 [debug] [Thread-1 (]: SQL status: OK in 1.7200000286102295 seconds
+[0m13:21:20.108385 [debug] [Thread-1 (]: Timing info for model.jaffle_shop.my_second_dbt_model (execute): 13:21:18.361004 => 13:21:20.108385
+[0m13:21:20.110340 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: ROLLBACK
+[0m13:21:20.110340 [debug] [Thread-1 (]: Databricks adapter: NotImplemented: rollback
+[0m13:21:20.111338 [debug] [Thread-1 (]: On model.jaffle_shop.my_second_dbt_model: Close
+[0m13:21:20.280887 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4600f754-f809-49d2-b851-4e1c30e3d7f2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7EF051DD0>]}
+[0m13:21:20.282884 [info ] [Thread-1 (]: 2 of 2 OK created sql view model test_rw.my_second_dbt_model ................... [[32mOK[0m in 1.94s]
+[0m13:21:20.284876 [debug] [Thread-1 (]: Finished running node model.jaffle_shop.my_second_dbt_model
+[0m13:21:20.287868 [debug] [MainThread]: On master: ROLLBACK
+[0m13:21:20.288864 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:21:20.517256 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:21:20.518253 [debug] [MainThread]: Spark adapter: NotImplemented: add_begin_query
+[0m13:21:20.519250 [debug] [MainThread]: Spark adapter: NotImplemented: commit
+[0m13:21:20.520249 [debug] [MainThread]: On master: ROLLBACK
+[0m13:21:20.521245 [debug] [MainThread]: Databricks adapter: NotImplemented: rollback
+[0m13:21:20.522242 [debug] [MainThread]: On master: Close
+[0m13:21:20.683812 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:21:20.684809 [debug] [MainThread]: Connection 'list_schemas' was properly closed.
+[0m13:21:20.685806 [debug] [MainThread]: Connection 'list_None_test_rw' was properly closed.
+[0m13:21:20.686804 [debug] [MainThread]: Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+[0m13:21:20.689795 [info ] [MainThread]: 
+[0m13:21:20.690792 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 7.13 seconds (7.13s).
+[0m13:21:20.692789 [debug] [MainThread]: Command end result
+[0m13:21:20.715727 [info ] [MainThread]: 
+[0m13:21:20.716725 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:21:20.718720 [info ] [MainThread]: 
+[0m13:21:20.722715 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m13:21:20.727696 [debug] [MainThread]: Command `dbt run` succeeded at 13:21:20.727696 after 11.26 seconds
+[0m13:21:20.729696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7DD5C9210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7D8A0F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7D8A0F510>]}
+[0m13:21:20.730689 [debug] [MainThread]: Flushing usage events
