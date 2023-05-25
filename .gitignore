@@ -1,1 +1,6 @@
 jaffle_shop/logs/*
+jaffle_shop/dbt_packages/dbt_utils/*
+jaffle_shop/target/*
+jaffle_shop/target/run/*
+jaffle_shop/dbt-tutorial.code-workspace
+logs/*
